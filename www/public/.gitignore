@@ -2,6 +2,8 @@
 /vendor
 /themes/nightly/localDesign/*
 /themes/demo
+.sass-cache
+node_modules
 composer.lock
 composer.phar
 .DS_Store
