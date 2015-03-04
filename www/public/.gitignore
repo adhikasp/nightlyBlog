@@ -1,5 +1,6 @@
 /bootstrap/compiled.php
 /vendor
+/themes/nightly/localDesign/*
 composer.lock
 composer.phar
 .DS_Store
