@@ -120,8 +120,11 @@ footer {
 footer .sosmed > img {
   width: 24px;
 }
-footer a {
-  color: #F39C12;
+footer a, footer a:visited {
+  color: lightgoldenrodyellow;
+}
+footer a:hover, footer a:active {
+  color: #ebeb48;
 }
 footer .small {
   font-size: 14px;
@@ -129,6 +132,10 @@ footer .small {
 footer .license {
   margin-top: 1rem;
   text-align: center;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .navbar-nightly {
@@ -138,7 +145,10 @@ footer .license {
 .navbar-nightly .navbar-brand {
   color: #ffffff;
   height: 70px;
-  line-height: 35px;
+  line-height: 40px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 .navbar-nightly .navbar-brand:hover, .navbar-nightly .navbar-brand:focus {
   color: #ecdbff;
@@ -150,7 +160,7 @@ footer .license {
 }
 .navbar-nightly .navbar-nav > li > a {
   height: 70px;
-  line-height: 35px;
+  line-height: 40px;
   color: #ffffff;
 }
 .navbar-nightly .navbar-nav > li > a:hover, .navbar-nightly .navbar-nav > li > a:focus {
@@ -180,6 +190,7 @@ footer .license {
 }
 .navbar-nightly .navbar-toggle {
   border-color: #8d1f1f;
+  margin-top: 18px;
 }
 .navbar-nightly .navbar-toggle:hover, .navbar-nightly .navbar-toggle:focus {
   background-color: #8d1f1f;
