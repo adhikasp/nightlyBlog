@@ -13,6 +13,7 @@ footer
     color: white
   h1
     text-align: center
+    margin-bottom: 100px
 
   section.divisi
     display: block
@@ -31,6 +32,17 @@ footer
       border: 10px solid white
       box-shadow: 170px 20px 0 0 $nl-orange
 
+    @media screen and (max-width: $break-md)
+      p
+        left: 0
+      img
+        position: static
+        margin: 0 auto
+        box-shadow: 0 0 20px 10px $nl-orange
+
   section.divisi:nth-child(odd)
     img
       box-shadow: 170px 20px 0 0 $nl-dark-red
+      @media screen and (max-width: $break-md)
+        box-shadow: 0 0 20px 10px $nl-dark-red
+

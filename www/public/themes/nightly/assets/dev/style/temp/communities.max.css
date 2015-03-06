@@ -236,6 +236,7 @@ footer {
 }
 #communities h1 {
   text-align: center;
+  margin-bottom: 100px;
 }
 #communities section.divisi {
   display: block;
@@ -254,6 +255,21 @@ footer {
   border: 10px solid white;
   box-shadow: 170px 20px 0 0 #F39C12;
 }
+@media screen and (max-width: 992px) {
+  #communities section.divisi p {
+    left: 0;
+  }
+  #communities section.divisi img {
+    position: static;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 10px #F39C12;
+  }
+}
 #communities section.divisi:nth-child(odd) img {
   box-shadow: 170px 20px 0 0 #BF0000;
+}
+@media screen and (max-width: 992px) {
+  #communities section.divisi:nth-child(odd) img {
+    box-shadow: 0 0 20px 10px #BF0000;
+  }
 }
