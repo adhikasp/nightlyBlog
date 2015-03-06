@@ -121,10 +121,10 @@ footer .sosmed > img {
   width: 24px;
 }
 footer a, footer a:visited {
-  color: lightgoldenrodyellow;
+  color: #f0f076;
 }
 footer a:hover, footer a:active {
-  color: #ebeb48;
+  color: #b8b815;
 }
 footer .small {
   font-size: 14px;
