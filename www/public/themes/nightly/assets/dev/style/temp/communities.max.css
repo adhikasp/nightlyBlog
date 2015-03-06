@@ -195,3 +195,39 @@ footer {
     background-color: #8d1f1f;
   }
 }
+body, main {
+  background-color: #D50000;
+  background-image: url(../img/noise-texture.png);
+  color: white;
+}
+
+footer {
+  box-shadow: none;
+}
+
+#communities h1, #communities h2, #communities h3, #communities h4 {
+  color: white;
+}
+#communities h1 {
+  text-align: center;
+}
+#communities section.divisi {
+  display: block;
+  margin-bottom: 5rem;
+}
+#communities section.divisi p {
+  position: relative;
+  left: 2rem;
+  font-size: 1rem;
+}
+#communities section.divisi img {
+  position: relative;
+  top: -30px;
+  left: 20px;
+  border-radius: 50%;
+  border: 10px solid white;
+  box-shadow: 170px 20px 0 0 #F39C12;
+}
+#communities section.divisi:nth-child(odd) img {
+  box-shadow: 170px 20px 0 0 #BF0000;
+}

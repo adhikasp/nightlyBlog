@@ -195,3 +195,45 @@ footer {
     background-color: #8d1f1f;
   }
 }
+main.container-fluid {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+section {
+  display: block;
+  padding-top: 70px;
+}
+
+section.about-landing {
+  background-color: #D50000;
+  background-image: url(../img/noise-texture.png);
+}
+
+section.structure {
+  background-image: url(../img/noise-texture.png);
+  background-color: #D50000;
+}
+section.structure h1 {
+  color: white;
+  text-align: center;
+}
+
+/* Triangles */
+.ss-triangle::after {
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+.ss-triangle::after {
+  bottom: -50px;
+  z-index: 10;
+  background: inherit;
+}

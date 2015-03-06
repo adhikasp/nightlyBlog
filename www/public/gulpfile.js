@@ -16,7 +16,14 @@ var libdevdir = devdir + 'lib/';
 var fontdevdir = devdir + 'font/';
 var imgdevdir = devdir + 'img/';
 
-var distDir = 'themes/nightly/assets/'
+var distDir = 'themes/nightly/assets/';
+var themeDir = [
+    'themes/nightly/partial/**/*',
+    'themes/nightly/pages/**/*',
+    'themes/nightly/layouts/*',
+    'themes/nightly/content/*',
+    'themes/nightly/assets/img/**/*'
+];
 
 function swallowError (error) {
 
@@ -73,7 +80,6 @@ gulp.task('styles', ['style:minify', 'style:move-ready-to-deploy'], function() {
     var vp = vinylPaths();
 
     return gulp.src(styledevdir + 'temp/*.min.css')
-        .pipe(concat('styles.min.css'))
         .pipe(gulp.dest( distDir + 'style'))
         .on('end', function () {
             del(vp.paths, { force: true });
@@ -133,6 +139,7 @@ gulp.task('watch', function() {
         port: 9000
     });
     gulp.watch([distDir + 'style/*']).on('change', livereload.changed);
+    gulp.watch(themeDir).on('change', livereload.changed);
 });
 
 gulp.task('default', function() {

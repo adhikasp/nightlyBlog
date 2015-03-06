@@ -1,0 +1,36 @@
+@import "main"
+
+body, main
+  background-color: $nl-red
+  background-image: $noise-texture
+  color: white
+
+footer
+  box-shadow: none
+
+#communities
+  h1,h2,h3,h4
+    color: white
+  h1
+    text-align: center
+
+  section.divisi
+    display: block
+    margin-bottom: 5rem
+
+    p
+      position: relative
+      left: 2rem
+      font-size: 1rem
+
+    img
+      position: relative
+      top: -30px
+      left: 20px
+      border-radius: 50%
+      border: 10px solid white
+      box-shadow: 170px 20px 0 0 $nl-orange
+
+  section.divisi:nth-child(odd)
+    img
+      box-shadow: 170px 20px 0 0 $nl-dark-red

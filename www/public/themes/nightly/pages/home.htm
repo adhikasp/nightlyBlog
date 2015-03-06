@@ -2,23 +2,63 @@ title  = "Home"
 url    = "/"
 layout = "default"
 
+id     = "home"
 ==
 {% put navbar %}
     <div class="landing">
-        <h1>Welcome to NL</h1>
+        <div class="logo">
+            <img src="{{ 'assets/img/nl-logo-notext-shadow.png'|theme }}" alt="">
+        </div>
 
-        <nav>
-            <p>Navigation yang sangat panjang</p>
-            <p>Menu navigasi yang lain</p>
+        <div class="tagline">
+            <h1>Night Login</h1>
+            <h3 class="slogan">
+                Where all the geeks come together
+            </h3>
+        </div>
+
+        <nav class="navbar navbar-landing">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="{{ 'home'|page }}">Home</a></li>
+                    <li><a href="{{ 'communities'|page }}">Communities</a></li>
+                    <li><a href="//nightlogin.caster.fm/" target="_blank">Radio NL</a></li>
+                    <li><a href="{{ 'about'|page }}">About Us</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 {% endput %}
 
 <div class="row">
-    <div class="col-sm-8">
-        <h2>Latest Post</h2>
-    </div>
-    <div class="col-sm-4">
-        <h2>Our Agendas</h2>
-    </div>
+    <article class="col-sm-8 post-index">
+        <h1>Latest Post</h1>
+
+        <section class="post">
+            <h3>Judul Post Imaginatif</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eaque veritatis libero repellendus quibusdam quas vitae vero harum debitis reprehenderit, dolor inventore neque delectus maxime atque! Laborum, non laboriosam voluptatum.</p>
+        </section>
+
+        <section class="post">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eaque veritatis libero repellendus quibusdam quas vitae vero harum debitis reprehenderit, dolor inventore neque delectus maxime atque! Laborum, non laboriosam voluptatum.</p>
+        </section>
+
+
+        <section class="post">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eaque veritatis libero repellendus quibusdam quas vitae vero harum debitis reprehenderit, dolor inventore neque delectus maxime atque! Laborum, non laboriosam voluptatum.</p>
+        </section>
+
+        <section class="post">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eaque veritatis libero repellendus quibusdam quas vitae vero harum debitis reprehenderit, dolor inventore neque delectus maxime atque! Laborum, non laboriosam voluptatum.</p>
+        </section>
+
+    </article>
+    <aside class="col-sm-4">
+        <aside class="event">
+            <h1>Our Agendas</h1>
+        </aside>
+        <aside class="calendar">
+            <h1>Calendar</h1>
+        </aside>
+    </aside>
 </div>
