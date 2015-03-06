@@ -13,27 +13,58 @@ id = 'about'
 {% put container %}
 <main class="container-fluid">
     <section class="about-landing ss-triangle">
-        <h1>Tes</h1>
+        <img src="{{ 'assets/img/nl-logo-notext-shadow.png'|theme }}" class="logo">
+        <h1>Night Login, <big>Never Logout!</big></h1>
     </section>
-    <section class="intro ss-triangle">
-        <h1>Apa itu Night Login?</h1>
+    <section class="intro container ss-triangle">
+        <h2>Apa itu Night Login?</h2>
         <p>
             <strong>Night Login</strong> adalah salah satu BSO bagi mahasiswa Teknologi Informasi di Jurusan Teknik Elektro dan Teknologi Informasi UGM. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sapiente eos, ipsa blanditiis magnam pariatur dolorum totam repudiandae, eum, et error aut dolores laudantium accusamus reprehenderit? Velit voluptatum veritatis laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, beatae quibusdam, maxime velit reiciendis, totam aspernatur, fugiat repudiandae commodi ducimus quaerat corporis ipsam fugit delectus. Voluptatibus minima, cupiditate. Ipsum, veritatis.
         </p>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. In rem nobis officiis eligendi, alias laborum iure quidem tenetur, repellendus earum! Perferendis tenetur quas, itaque quos eius veniam, eum saepe fugit?
         </p>
+        <h2>Visi &amp; Misi</h2>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Quia corporis ex quisquam quasi ipsa accusantium quaerat eaque provident amet, saepe doloribus commodi soluta doloremque laboriosam porro nesciunt sapiente illo ab!</li>
+            <li>Temporibus deleniti non minima, perferendis corporis facilis debitis saepe veritatis ab. Eum, possimus?</li>
+            <li>Reprehenderit porro culpa nostrum dolore non ipsum, ex eum.</li>
+        </ol>
     </section>
 
-    <section class="structure">
-        <div class="hack"></div>
-        <h1>Susunan Kepengurusan</h1>
+    <section class="structure ss-triangle">
+        <h2>Susunan Kepengurusan</h2>
         <hr>
+        <img src="{{ 'assets/img/susunan-kepengurusan.png'|theme }}" alt="Bagan susunan kepengurusan organisasi" class="img-responsive bagan-organisasi">
     </section>
 
-    <section class="kontak">
-        <h1>Kontak</h1>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellendus eum ullam esse dolores fugiat quis sit, ratione facere expedita alias tempora aspernatur consequatur sint necessitatibus aliquam molestiae officia! Illo.
+    <section class="kontak container">
+        <h1 class="slogan">
+            Night Login <small>never logout!</small>
+        </h1>
+
+        <h2>Kontak</h2>
+            <span class="sosmed bukubiru">
+                <img src="{{ 'assets/img/sosmed-buku.png'|theme }}">
+                Facebook <a href="//facebook.com/NightLogin">Night Login</a>
+            </span>
+            <br>
+            <span class="sosmed burung">
+                <img src="{{ 'assets/img/sosmed-burung.png'|theme }}">
+                Twitter <a href="//facebook.com/NightLogin">@nightlogin</a>
+            </span>
+            <br>
+            <span>
+                CP : 081 227 159 824 (Elisabeth Diana K)
+            </span>
+            <br>
+            <h2>Alamat</h2>
+            <p>
+                Jurusan Teknik Elektro dan Teknologi Informasi <br>
+                Universitas Gadjah Mada <br>
+                Jalan Grafika No 2, Kampus UGM Yogyakarta 55281
+            </p>
     </section>
 </main>
 {% endput %}

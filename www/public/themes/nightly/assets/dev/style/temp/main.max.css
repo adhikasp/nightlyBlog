@@ -48,7 +48,7 @@ body {
   font-size: 5.5rem;
   margin-bottom: none;
 }
-.landing .tagline h3.slogan {
+.landing .tagline h3#slogan {
   margin-top: 1rem;
   padding-top: none;
 }
@@ -114,6 +114,21 @@ footer {
   background-image: url(../img/noise-texture.png);
   color: white;
   box-shadow: 0 0 7px 1px black;
+  z-index: 10;
+  margin-top: 10px;
+}
+footer .sosmed > img {
+  width: 24px;
+}
+footer a {
+  color: #F39C12;
+}
+footer .small {
+  font-size: 14px;
+}
+footer .license {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .navbar-nightly {

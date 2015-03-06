@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
@@ -18,17 +18,20 @@ var imgdevdir = devdir + 'img/';
 
 var distDir = 'themes/nightly/assets/';
 var themeDir = [
-    'themes/nightly/partial/**/*',
-    'themes/nightly/pages/**/*',
-    'themes/nightly/layouts/*',
-    'themes/nightly/content/*',
-    'themes/nightly/assets/img/**/*'
+    'themes/nightly/assets/partial/**/*',
+    'themes/nightly/assets/pages/**/*',
+    'themes/nightly/assets/layouts/*',
+    'themes/nightly/assets/content/*',
+    'themes/nightly/assets/img/**/*',
+    'themes/nightly/assets/style/*',
+    'themes/nightly/assets/script/*',
 ];
 
 function swallowError (error) {
 
     //If you want details of the error in the console
     console.log(error.toString());
+    notify({message:'Error: ' + error.toString()});
 
     this.emit('end');
 }
@@ -83,8 +86,7 @@ gulp.task('styles', ['style:minify', 'style:move-ready-to-deploy'], function() {
         .pipe(gulp.dest( distDir + 'style'))
         .on('end', function () {
             del(vp.paths, { force: true });
-        })
-        .pipe(notify({message:'CSS siap'}));
+        });
 });
 
 /**
@@ -138,7 +140,6 @@ gulp.task('watch', function() {
     livereload.listen({
         port: 9000
     });
-    gulp.watch([distDir + 'style/*']).on('change', livereload.changed);
     gulp.watch(themeDir).on('change', livereload.changed);
 });
 

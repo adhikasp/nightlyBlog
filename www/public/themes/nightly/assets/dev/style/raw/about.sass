@@ -1,23 +1,54 @@
+@import 'main'
 
 main.container-fluid
   padding: 0
   margin: 0
-  min-height: 100%
 
 section
-  display: block
-  padding-top: 70px
+  padding: 100px 30px 70px
+  position: relative
+
+section:nth-child(odd)
+  background-color: $nl-red
+  background-image: $noise-texture
+  min-height: 80vh
+  h1, h2
+    color: white
+
+section:nth-child(even)
+  background-color: white
 
 section.about-landing
-  background-color: $nl-red
-  background-image: $noise-texture
+  padding-top: 2rem
+
+  img.logo
+    display: block
+    margin: 0 auto
+    width: 50%
+
+  h1
+    text-align: center
+
+    big
+      font-weight: bold
 
 section.structure
-  background-image: $noise-texture
-  background-color: $nl-red
-  h1
-    color: white
+  h2
     text-align: center
+
+  img.bagan-organisasi
+    width: 600px
+    margin: 10px auto
+
+section.kontak
+  h2
+    margin-bottom: 0.4rem
+  .sosmed
+    display: inline-block
+    padding-bottom: 0.5rem
+    img
+      padding-right: 0.5rem
+      vertical-align: middle
 
 /* Triangles */
 .ss-triangle::after

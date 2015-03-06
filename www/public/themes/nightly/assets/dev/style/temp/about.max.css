@@ -48,7 +48,7 @@ body {
   font-size: 5.5rem;
   margin-bottom: none;
 }
-.landing .tagline h3.slogan {
+.landing .tagline h3#slogan {
   margin-top: 1rem;
   padding-top: none;
 }
@@ -114,6 +114,21 @@ footer {
   background-image: url(../img/noise-texture.png);
   color: white;
   box-shadow: 0 0 7px 1px black;
+  z-index: 10;
+  margin-top: 10px;
+}
+footer .sosmed > img {
+  width: 24px;
+}
+footer a {
+  color: #F39C12;
+}
+footer .small {
+  font-size: 14px;
+}
+footer .license {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .navbar-nightly {
@@ -198,26 +213,59 @@ footer {
 main.container-fluid {
   padding: 0;
   margin: 0;
-  min-height: 100%;
 }
 
 section {
-  display: block;
-  padding-top: 70px;
+  padding: 100px 30px 70px;
+  position: relative;
+}
+
+section:nth-child(odd) {
+  background-color: #D50000;
+  background-image: url(../img/noise-texture.png);
+  min-height: 80vh;
+}
+section:nth-child(odd) h1, section:nth-child(odd) h2 {
+  color: white;
+}
+
+section:nth-child(even) {
+  background-color: white;
 }
 
 section.about-landing {
-  background-color: #D50000;
-  background-image: url(../img/noise-texture.png);
+  padding-top: 2rem;
+}
+section.about-landing img.logo {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+section.about-landing h1 {
+  text-align: center;
+}
+section.about-landing h1 big {
+  font-weight: bold;
 }
 
-section.structure {
-  background-image: url(../img/noise-texture.png);
-  background-color: #D50000;
-}
-section.structure h1 {
-  color: white;
+section.structure h2 {
   text-align: center;
+}
+section.structure img.bagan-organisasi {
+  width: 600px;
+  margin: 10px auto;
+}
+
+section.kontak h2 {
+  margin-bottom: 0.4rem;
+}
+section.kontak .sosmed {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+section.kontak .sosmed img {
+  padding-right: 0.5rem;
+  vertical-align: middle;
 }
 
 /* Triangles */
