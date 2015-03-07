@@ -7,9 +7,8 @@ html, body {
   border: 0;
   font-size: 16px;
 }
-
-body {
-  color: black;
+html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: Roboto !important;
 }
 
 .landing {
@@ -28,6 +27,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
   box-shadow: 0 0 7px 1px black;
+}
+.landing h1, .landing h2, .landing h3, .landing h4, .landing h5, .landing h6 {
+  font-family: Roboto;
 }
 .landing .logo {
   position: absolute;
@@ -56,6 +58,8 @@ body {
 }
 .landing .tagline h1 {
   font-size: 5.5rem;
+  font-family: Roboto;
+  font-weight: 300;
   margin-bottom: none;
 }
 .landing .tagline h3#slogan {
@@ -70,6 +74,7 @@ body {
   margin-right: 2rem;
   text-align: right;
   font-size: 1.4rem;
+  font-family: Roboto;
 }
 .landing nav.navbar-landing a, .landing nav.navbar-landing a:link, .landing nav.navbar-landing a:focus, .landing nav.navbar-landing a:visited {
   font-size: 1.4rem;
@@ -125,6 +130,7 @@ body > nav.navbar-nightly .navbar-brand img {
 
 main {
   min-height: 100%;
+  padding-bottom: 30px;
 }
 main h1, main h2 {
   color: #D50000;
@@ -134,11 +140,19 @@ main .post-index .post {
   border-top: 1px solid red;
   padding-top: 0.5rem;
   margin-bottom: 1.4rem;
+  display: flex;
+  align-items: center;
 }
 main .post-index .post h3 {
   color: #D50000;
   padding-top: 0;
   margin-top: 0;
+}
+main .post-index .post .meta {
+  font-size: 12px;
+}
+main .sidebar {
+  padding: 20px 10px;
 }
 
 .container-fluid {
@@ -172,6 +186,10 @@ footer .license {
 footer ul {
   list-style-type: none;
   padding-left: 0;
+}
+footer .latest-post {
+  font-size: 14px;
+  line-height: 1.5rem;
 }
 
 .navbar-nightly {
