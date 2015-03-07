@@ -66,6 +66,8 @@ html, body
       font-family: $font-judul
       font-weight: 300
       margin-bottom: none
+      @media screen and (max-width: $break-sm)
+        font-size: 3rem
     h3#slogan
       margin-top: 1rem
       padding-top: none
@@ -137,14 +139,26 @@ main
       border-top: 1px solid red
       padding-top: 0.5rem
       margin-bottom: 1.4rem
-      display: flex
-      align-items: center
       h3
         color: $nl-red
         padding-top: 0
         margin-top: 0
       .meta
         font-size: 12px
+
+      @media screen and (min-width: $break-sm)
+        .row
+          display: flex
+          align-items: center
+
+      @media screen and (max-width: $break-sm)
+        display: static
+        align-items: initial
+        img
+          max-height: 50vh
+          text-align: center
+          margin: 0 auto
+          display: block
 
   .sidebar
     padding: 20px 10px

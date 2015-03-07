@@ -62,6 +62,11 @@ html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3,
   font-weight: 300;
   margin-bottom: none;
 }
+@media screen and (max-width: 768px) {
+  .landing .tagline h1 {
+    font-size: 3rem;
+  }
+}
 .landing .tagline h3#slogan {
   margin-top: 1rem;
   padding-top: none;
@@ -144,8 +149,6 @@ main .post-index .post {
   border-top: 1px solid red;
   padding-top: 0.5rem;
   margin-bottom: 1.4rem;
-  display: flex;
-  align-items: center;
 }
 main .post-index .post h3 {
   color: #D50000;
@@ -154,6 +157,24 @@ main .post-index .post h3 {
 }
 main .post-index .post .meta {
   font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  main .post-index .post .row {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .post-index .post {
+    display: static;
+    align-items: initial;
+  }
+  main .post-index .post img {
+    max-height: 50vh;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
 }
 main .sidebar {
   padding: 20px 10px;
