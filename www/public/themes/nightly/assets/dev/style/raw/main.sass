@@ -2,6 +2,8 @@ $standard-shadow: 0 0 7px 1px black
 $noise-texture: url(../img/noise-texture.png)
 
 $break-md: 992px
+$break-sm: 768px
+$break-xs: 380px
 
 $nl-red: #D50000
 $nl-dark-red: #BF0000
@@ -48,6 +50,10 @@ body
     img
       width: 100%
       height: auto
+    @media screen and (max-width: $break-sm)
+      width: 200px
+    @media screen and (max-width: $break-xs)
+      width: 100px
 
   .tagline
     text-align: center
@@ -67,7 +73,6 @@ body
     margin-right: 2rem
     text-align: right
     font-size: 1.4rem
-
     a, a:link, a:focus, a:visited
       font-size: 1.4rem
       color: white
@@ -76,10 +81,21 @@ body
     a:hover, a:active
       background-color: inherit
       text-decoration: underline
+    .navbar-collapse
+      @media screen and (max-width: $break-sm)
+        background-color: rgba(0,0,0,0.8)
+        border-radius: 12px
 
     li.active a
       border: thin solid white
       border-radius: 8px
+
+  .navbar-toggle
+    border-color: white
+    &:hover, &:focus
+      background-color: black
+    .icon-bar
+      background-color: white
 
 body > nav.navbar-nightly
   background-color: $nl-dark-red
@@ -93,6 +109,11 @@ body > nav.navbar-nightly
       height: 60px
       width: auto
       margin-top: -10px
+
+      @media screen and (max-width: $break-xs)
+        width: 80px
+        height: auto
+        margin-top: 1px
 
 main
   min-height: 100%
@@ -109,6 +130,9 @@ main
         color: $nl-red
         padding-top: 0
         margin-top: 0
+
+.container-fluid
+  padding: 0
 
 footer
   background-color: $nl-red

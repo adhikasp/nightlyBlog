@@ -40,6 +40,16 @@ body {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  .landing .logo {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .landing .logo {
+    width: 100px;
+  }
+}
 .landing .tagline {
   text-align: center;
   display: inline-block;
@@ -71,9 +81,24 @@ body {
   background-color: inherit;
   text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+  .landing nav.navbar-landing .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+  }
+}
 .landing nav.navbar-landing li.active a {
   border: thin solid white;
   border-radius: 8px;
+}
+.landing .navbar-toggle {
+  border-color: white;
+}
+.landing .navbar-toggle:hover, .landing .navbar-toggle:focus {
+  background-color: black;
+}
+.landing .navbar-toggle .icon-bar {
+  background-color: white;
 }
 
 body > nav.navbar-nightly {
@@ -89,6 +114,13 @@ body > nav.navbar-nightly .navbar-brand img {
   height: 60px;
   width: auto;
   margin-top: -10px;
+}
+@media screen and (max-width: 380px) {
+  body > nav.navbar-nightly .navbar-brand img {
+    width: 80px;
+    height: auto;
+    margin-top: 1px;
+  }
 }
 
 main {
@@ -107,6 +139,10 @@ main .post-index .post h3 {
   color: #D50000;
   padding-top: 0;
   margin-top: 0;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 footer {

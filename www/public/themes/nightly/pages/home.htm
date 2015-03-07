@@ -19,12 +19,23 @@ id     = "home"
 
         <nav class="navbar navbar-landing">
             <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ 'home'|page }}">Home</a></li>
-                    <li><a href="{{ 'communities'|page }}">Communities</a></li>
-                    <li><a href="//nightlogin.caster.fm/" target="_blank">Radio NL</a></li>
-                    <li><a href="{{ 'about'|page }}">About Us</a></li>
-                </ul>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+                        <span class="sr-only">Open navigation menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="menu-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ 'home'|page }}">Home</a></li>
+                        <li><a href="{{ 'communities'|page }}">Communities</a></li>
+                        <li><a href="//nightlogin.caster.fm/" target="_blank">Radio NL</a></li>
+                        <li><a href="{{ 'about'|page }}">About Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
