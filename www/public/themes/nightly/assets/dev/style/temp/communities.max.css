@@ -112,6 +112,10 @@ body > nav.navbar-nightly {
   background-image: url(../img/noise-texture.png);
   margin-bottom: 0;
 }
+body > nav.navbar-nightly .navbar-header {
+  padding-left: 1rem;
+  margin-right: 0;
+}
 body > nav.navbar-nightly .navbar-brand {
   color: #F39C12;
 }
@@ -157,6 +161,7 @@ main .sidebar {
 
 .container-fluid {
   padding: 0;
+  margin: 0;
 }
 
 footer {
@@ -312,11 +317,17 @@ footer {
 @media screen and (max-width: 992px) {
   #communities section.divisi p {
     left: 0;
+    padding-right: 10px;
   }
   #communities section.divisi img {
     position: static;
     margin: 0 auto;
     box-shadow: 0 0 20px 10px #F39C12;
+  }
+}
+@media screen and (max-width: 380px) {
+  #communities section.divisi {
+    width: 70vw;
   }
 }
 #communities section.divisi:nth-child(odd) img {
